@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+HTML,body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+/*------------------------------------ PARTIE DE LA BARRE DE MENU------------------------------------------- */
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+.yt-nav-left .menu_icon {
+  width: 22px;
+  margin-right: 25px;
+}
+
+.yt-siteLogo{
+    width: 130px;
+
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+.yt-nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+.yt-nav-right img{
+    width: 20px;
+    margin-right: 25px;
+
+}
+
+.yt-nav-right .yt-userProfile{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+
+.yt-search-box{
+    border: 1px solid #ccc;
+    margin-right: 25px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.yt-search-input{
+    width: 400px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 2px;
+}
+
+.yt-search-box img{
+    width: 15px;
+}
+
+/*------------------------------------ PARTIE MENU DU COTE------------------------------------------- */
+
+.yt-sidebar{
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+
+.yt-sidebar-link img{
+    width: 20px;
+    margin-right: 20px;
+}
+body{
+    background:#f3f4f2 ;
+}
+
+.yt-sidebar a {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: nowrap;
+    padding-top: 15px;
+    
+
+}
+
+.small-sidebar{
+    width: 5%;
+}
+
+.small-sidebar a span{
+    display: none;
+}
+
+.yt-sidebar a:hover{
+    background: #ddd;
+    
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #bbb;
+    border-radius: 6px;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+
+}
+
+
+/*------------------------------------ PARTIE PRINCIPALE------------------------------------------- */
+
+.yt-banner{
+   
+    width:100%;
+
+}
+.yt-banner img{
+    height: 250px;
+    width:100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.yt-pageContainer{
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease;
+
+
+}
+
+.paddingLeft{
+    padding-left: 7%;
+}
+
+/*------------------------------------ PARTIE liste des videos------------------------------------------- */
+
+.yt-listContent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap: 16px;
+    margin-top: 15px;
+    grid-row-gap: 30px;
+}
+
+.yt-listContent a .yt-thumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.yt-listContent .d-flex img{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+}
+
+.yt-videoInfo{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+
+.yt-videoInfo a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+/*------------------------------------ PARTIE responsive du site------------------------------------------- */
+
+@media (max-width: 900px) {
+    .yt-search-input{
+        width: 200px;
+    }
+    .yt-banner img{
+        display: none;
+    }
+}
+
+@media (max-width:691px) {
+    .yt-search-input{
+        width: 200px;
+    }
+    .yt-banner{
+        display: none;
+    }
+    
+    .yt-nav-right .yt-right-icone{
+
+        display: none;
+    }
+
+    .small-sidebar{
+        width: 8%;
+    }
+
+    .content .large-content{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .yt-sidebar a{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
